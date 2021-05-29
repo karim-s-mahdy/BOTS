@@ -10,7 +10,7 @@ bot = telebot.TeleBot(API_KEY)
 @bot.message_handler(commands=['start'])
 
 def start(message):
-  print(f'>> {message.chat.id}')
+
   bot.send_message(message.chat.id,'<b> [+] BOT STARTED [+] </b>',parse_mode='html')
   while True:
     try:
